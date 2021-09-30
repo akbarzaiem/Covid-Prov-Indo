@@ -1,0 +1,117 @@
+<template>
+  <div class="container">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <div class="row">
+      <div class="col-sm align-self-center">
+        <div class="tittle">
+          <p>Covid 19 di Indonesia</p>
+        </div>
+        <div class="keterangan text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          pariatur dignissimos doloribus earum esse dolorem laudantium,
+          quibusdam cupiditate quia magni ratione, repellat obcaecati illo
+          minus. Possimus magni quaerat voluptas facere.
+        </div>
+        <div class="button-hero float-left">
+          <router-link style="text-decoration: none" to="/about">
+            <button type="button" class="btn btn-primary btn-lg">
+              <p>Lihat Data</p>
+            </button>
+          </router-link>
+        </div>
+      </div>
+      <div class="col-sm align-self-center">
+        <div class="image-hero">
+          <img src="../assets/hero.jpg" alt="hero image" />
+          <a href="https://www.freepik.com/photos/woman"
+            >Woman photo created by benzoix - www.freepik.com</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Hero",
+};
+</script>
+
+<style scoped>
+.container {
+  margin-top: 50px;
+}
+.tittle p {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+}
+.button-hero button {
+  border-radius: 30px;
+  margin-top: 20px;
+  height: 50px;
+}
+.button-hero p {
+  color: white;
+}
+.image-hero img {
+  width: 550px;
+  border-radius: 15px;
+}
+
+.image-hero a {
+  color: black;
+  font-size: 8px;
+  float: right;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .button-hero button {
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+  }
+  .image-hero img,
+  a {
+    width: 400px;
+    border-radius: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .button-hero button {
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+  }
+  .image-hero img,
+  a {
+    width: 400px;
+    border-radius: 15px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .button-hero button {
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 270px;
+  }
+  .image-hero img,
+  a {
+    width: 500px;
+    border-radius: 15px;
+  }
+}
+</style>
