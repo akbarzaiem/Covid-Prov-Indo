@@ -27,6 +27,7 @@
             <p>Dirawat :{{ covid.dirawat }} jiwa</p>
             <p>Sembuh :{{ covid.sembuh }} jiwa</p>
             <p>Meninggal :{{ covid.meninggal }} jiwa</p>
+            <p>Last Update :{{ covid.last_date }}</p>
           </div>
         </div>
       </div>
@@ -53,7 +54,9 @@ export default {
 
   mounted() {
     axios
-      .get("https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi")
+      .get(
+        "https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi/more"
+      )
       .then((response) => (this.info = response.data));
   },
 };
