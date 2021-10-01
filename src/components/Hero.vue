@@ -7,7 +7,9 @@
       rel="stylesheet"
     />
     <div class="row">
-      <div class="col-sm align-self-center">
+      <div
+        class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center"
+      >
         <div class="tittle">
           <p>Covid 19 di Indonesia</p>
         </div>
@@ -17,7 +19,7 @@
           quibusdam cupiditate quia magni ratione, repellat obcaecati illo
           minus. Possimus magni quaerat voluptas facere.
         </div>
-        <div class="button-hero float-left">
+        <div class="button-hero">
           <router-link style="text-decoration: none" to="/about">
             <button type="button" class="btn btn-primary btn-lg">
               <p>Lihat Data</p>
@@ -25,7 +27,9 @@
           </router-link>
         </div>
       </div>
-      <div class="col-sm align-self-center">
+      <div
+        class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center"
+      >
         <div class="image-hero">
           <img src="../assets/hero.jpg" alt="hero image" />
           <a href="https://www.freepik.com/photos/woman"
@@ -71,47 +75,70 @@ export default {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-  .button-hero button {
-    border-radius: 30px;
+@media (min-width: 300px) and (max-width: 576px) {
+  .button-hero {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 150px;
   }
   .image-hero img,
   a {
-    width: 400px;
-    border-radius: 15px;
+    width: 300px;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 577px) and (max-width: 768px) {
-  .button-hero button {
-    border-radius: 30px;
+  .button-hero {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 180px;
   }
-  .image-hero img,
-  a {
-    width: 400px;
+  .image-hero img {
+    width: 320px;
     border-radius: 15px;
   }
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (min-width: 769px) and (max-width: 991.98px) {
-  .button-hero button {
-    border-radius: 30px;
+@media (min-width: 769px) and (max-width: 1023px) {
+  .button-hero {
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 270px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
   }
-  .image-hero img,
-  a {
-    width: 500px;
+  .image-hero img {
+    width: 310px;
     border-radius: 15px;
+  }
+  .tittle p {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .button-hero {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .image-hero img {
+    width: 440px;
+    border-radius: 15px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1201px) {
+  .button-hero {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
   }
 }
 </style>
