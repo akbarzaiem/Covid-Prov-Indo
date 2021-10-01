@@ -9,26 +9,24 @@
     <div class="sourceData text-left">
       <p>
         Data from :
-        <a
-          href="https://bnpb-inacovid19.hub.arcgis.com/datasets/data-harian-kasus-per-provinsi-covid-19-indonesia/api"
-          >BNPB</a
-        >
+        <a>Kemenkes RI</a>
       </p>
     </div>
 
     <div class="row" v-if="info.length > 0">
       <div
         v-for="covid in info"
-        :key="covid.FID"
-        class="card col-lg-3 covid"
+        :key="covid.provinsi"
+        class="card col-xl-3 col-lg-3 col-sm-6 col-12 covid"
         style="width: 18rem"
       >
         <div class="card-body">
-          <h4 class="card-title">{{ covid.attributes.Provinsi }}</h4>
+          <h4 class="card-title">{{ covid.provinsi }}</h4>
           <div class="card-text">
-            <p>Positif :{{ covid.attributes.Kasus_Posi }} jiwa</p>
-            <p>Sembuh :{{ covid.attributes.Kasus_Semb }} jiwa</p>
-            <p>Meninggal :{{ covid.attributes.Kasus_Meni }} jiwa</p>
+            <p>Positif :{{ covid.kasus }} jiwa</p>
+            <p>Dirawat :{{ covid.dirawat }} jiwa</p>
+            <p>Sembuh :{{ covid.sembuh }} jiwa</p>
+            <p>Meninggal :{{ covid.meninggal }} jiwa</p>
           </div>
         </div>
       </div>
@@ -55,10 +53,8 @@ export default {
 
   mounted() {
     axios
-      .get(
-        "https://services5.arcgis.com/VS6HdKS0VfIhv8Ct/arcgis/rest/services/COVID19_Indonesia_per_Provinsi/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json"
-      )
-      .then((response) => (this.info = response.data.features));
+      .get("https://apicovid19indonesia-v2.vercel.app/api/indonesia/provinsi")
+      .then((response) => (this.info = response.data));
   },
 };
 </script>
