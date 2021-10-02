@@ -20,7 +20,7 @@
           minus. Possimus magni quaerat voluptas facere.
         </div>
         <div class="button-hero">
-          <router-link style="text-decoration: none" to="/about">
+          <router-link style="text-decoration: none" to="/indototal">
             <button type="button" class="btn btn-primary btn-lg">
               <p>Lihat Data</p>
             </button>
@@ -64,7 +64,7 @@ export default {
   color: white;
 }
 .image-hero img {
-  width: 550px;
+  width: 530px;
   border-radius: 15px;
 }
 

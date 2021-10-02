@@ -2,6 +2,11 @@
   <div class="about">
     <div class="container">
       <Header />
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/indototal">Data Nasional</router-link>|
+        <router-link to="/about">Data Provinsi</router-link>
+      </div>
       <ListData />
       <Footer />
     </div>
