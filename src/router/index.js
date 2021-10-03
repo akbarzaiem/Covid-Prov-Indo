@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import IndoTotal from '../views/IndoTotal.vue'
+import Vaccine from '../views/Vaccine.vue'
+
 
 Vue.use(VueRouter)
 
@@ -25,6 +27,11 @@ const routes = [
     path: '/indototal',
     name: 'IndoTotal',
     component: IndoTotal
+  },
+  {
+    path: '/vaccine',
+    name: 'Vaccine',
+    component: Vaccine
   },
 ]
 

@@ -4,8 +4,9 @@
       <Header />
       <div id="nav">
         <router-link to="/">Home</router-link> |
-        <router-link to="/indototal">Data Nasional</router-link>|
-        <router-link to="/about">Data Provinsi</router-link>
+        <router-link to="/indototal">Data Nasional</router-link> |
+        <router-link to="/about">Data Provinsi</router-link> |
+        <router-link to="/vaccine">Data Vaksin</router-link>
       </div>
       <ListData />
       <Footer />
