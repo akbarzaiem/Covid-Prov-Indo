@@ -26,6 +26,18 @@
         <div class="col align-self-center">
           <div class="image">
             <img src="../assets/vaccine.jpg" alt="vaccine image" />
+            <p class="attribute">
+              Photo by
+              <a
+                href="https://unsplash.com/@schluditsch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Daniel Schludi</a
+              >
+              on
+              <a
+                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </p>
           </div>
         </div>
         <div class="col align-self-center">
@@ -102,6 +114,10 @@ export default {
 }
 .from {
   font-family: "Poppins", sans-serif;
+}
+.attribute {
+  color: black;
+  font-size: 8px;
 }
 .loader {
   border: 15px solid #f3f3f3;
