@@ -43,17 +43,21 @@
         <div class="col align-self-center">
           <h3 class="tittle">Jumlah Penerima Vaksin di Indonesia</h3>
           <p class="tittle-vak">Vaksinasi 1</p>
+          <p class="percent">{{ percentVaksin1 }} %</p>
           <span class="result">
             {{ vaksin.vaksinasi1 }}
           </span>
           <span class="from">dari </span>
-          <span>{{ vaksin.totalsasaran }}</span>
+          <span class="result">{{ vaksin.totalsasaran }}</span>
+          <span class="from"> penerima vaksin </span>
           <p class="tittle-vak">Vaksinasi 2</p>
+          <p class="percent">{{ percentVaksin2 }} %</p>
           <span class="result">
             {{ vaksin.vaksinasi2 }}
           </span>
           <span class="from">dari </span>
-          <span>{{ vaksin.totalsasaran }}</span>
+          <span class="result">{{ vaksin.totalsasaran }}</span>
+          <span class="from"> penerima vaksin </span>
         </div>
       </div>
     </div>
@@ -89,6 +93,24 @@ export default {
       .get("https://vaksincovid19-api.vercel.app/api/vaksin")
       .then((response) => (this.vaksin = response.data));
   },
+
+  computed: {
+    totalVaksin1() {
+      return this.vaksin.vaksinasi1;
+    },
+    totalVaksin2() {
+      return this.vaksin.vaksinasi2;
+    },
+    totalKeseluruhanData() {
+      return this.vaksin.totalsasaran;
+    },
+    percentVaksin1() {
+      return ((this.totalVaksin1 / this.totalKeseluruhanData) * 100).toFixed(2);
+    },
+    percentVaksin2() {
+      return ((this.totalVaksin2 / this.totalKeseluruhanData) * 100).toFixed(2);
+    },
+  },
 };
 </script>
 
@@ -97,7 +119,7 @@ export default {
   margin-top: 40px;
 }
 .image img {
-  width: 300px;
+  width: 290px;
   border-radius: 20px;
 }
 .tittle {
@@ -109,7 +131,7 @@ export default {
   margin-top: 40px;
 }
 .result {
-  font-size: 40px;
+  font-size: 20px;
   font-family: "Graduate", cursive;
 }
 .from {
@@ -118,6 +140,10 @@ export default {
 .attribute {
   color: black;
   font-size: 8px;
+}
+.percent {
+  font-size: 40px;
+  font-family: "Graduate", cursive;
 }
 .loader {
   border: 15px solid #f3f3f3;
