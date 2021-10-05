@@ -47,7 +47,7 @@
 
         <div class="col-lg-12">
           <div class="update">
-            <p class="tittle">Update data</p>
+            <p class="tittle">Last Update</p>
             <p>{{ total.lastUpdate }}</p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default {
 
 <style scoped>
 .hasil {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .data {
   font-size: 50px;
