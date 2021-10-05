@@ -17,6 +17,7 @@
       :dots="false"
       :autoplaySpeed="1"
     >
+      <p>By <a href="#">akbar zaiem</a></p>
       <p>Make it with :</p>
       <img class="rounded mx-auto d-block" src="../assets/logo.png" alt="" />
       <img class="rounded mx-auto d-block" src="../assets/html.svg" alt="" />
@@ -51,5 +52,8 @@ export default {
 p {
   font-family: "Poppins", sans-serif;
   font-size: 13px;
+}
+a {
+  text-decoration: none;
 }
 </style>
