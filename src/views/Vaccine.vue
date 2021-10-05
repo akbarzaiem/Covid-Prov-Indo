@@ -58,6 +58,7 @@
           <span class="from">dari </span>
           <span class="result">{{ vaksin.totalsasaran }}</span>
           <span class="from"> penerima vaksin </span>
+          <p class="update">Last Update : {{ vaksin.lastUpdate }}</p>
         </div>
       </div>
     </div>
@@ -116,7 +117,7 @@ export default {
 
 <style scoped>
 .vaksin {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 .image img {
   width: 290px;
@@ -144,6 +145,10 @@ export default {
 .percent {
   font-size: 40px;
   font-family: "Graduate", cursive;
+}
+.update {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
 }
 .loader {
   border: 15px solid #f3f3f3;
