@@ -17,7 +17,7 @@
       :dots="false"
       :autoplaySpeed="1"
     >
-      <p>By <a href="#">akbar zaiem</a></p>
+      <p>By <a href="https://www.instagram.com/akbarzaiem">akbar zaiem</a></p>
       <p>Make it with :</p>
       <img
         class="rounded mx-auto d-block"
