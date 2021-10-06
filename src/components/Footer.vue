@@ -25,10 +25,10 @@
         alt=""
       />
       <img class="rounded mx-auto d-block" src="../assets/html.svg" alt="" />
-      <img class="rounded mx-auto d-block" src="../assets/css.png" alt="" />
+      <img class="rounded mx-auto d-block" src="../assets/css3.svg" alt="" />
       <img
         class="rounded mx-auto d-block"
-        src="../assets/bootstrap.png"
+        src="../assets/bootstrap-4.svg"
         alt=""
       />
     </carousel>
