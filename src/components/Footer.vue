@@ -28,7 +28,7 @@
       <img class="rounded mx-auto d-block" src="../assets/css3.svg" alt="" />
       <img
         class="rounded mx-auto d-block"
-        src="../assets/bootstrap.svg"
+        src="../assets/bootstrap.svg?nf_resize=fit&w=40&h=40"
         alt=""
       />
     </carousel>
