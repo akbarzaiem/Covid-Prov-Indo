@@ -19,7 +19,11 @@
     >
       <p>By <a href="#">akbar zaiem</a></p>
       <p>Make it with :</p>
-      <img class="rounded mx-auto d-block" src="../assets/logo.png" alt="" />
+      <img
+        class="rounded mx-auto d-block"
+        src="../assets/Vue-Logo.svg"
+        alt=""
+      />
       <img class="rounded mx-auto d-block" src="../assets/html.svg" alt="" />
       <img class="rounded mx-auto d-block" src="../assets/css.png" alt="" />
       <img
