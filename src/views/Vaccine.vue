@@ -23,13 +23,15 @@
     </div>
     <div class="vaksin" v-if="vaksin.length !== 0">
       <div class="row">
-        <div class="col align-self-center col-sm-12 col-12">
-          <div class="image">
-            <img
-              src="../assets/vaccine.jpg"
-              alt="vaccine image"
-              class="d-none d-sm-block"
-            />
+        <div
+          class="
+            col
+            align-self-center
+            col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12
+          "
+        >
+          <div class="image d-none d-sm-block">
+            <img src="../assets/vaccine.jpg" alt="vaccine image" />
             <p class="attribute d-none d-sm-block">
               Photo by
               <a
