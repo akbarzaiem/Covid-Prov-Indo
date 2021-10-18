@@ -8,7 +8,11 @@
     />
     <div class="row">
       <div
-        class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center"
+        class="
+          satu
+          col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12
+          align-self-center
+        "
       >
         <div class="tittle">
           <p>Covid 19 di Indonesia</p>
@@ -31,7 +35,11 @@
         class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center"
       >
         <div class="image-hero">
-          <img src="../assets/hero.jpg" alt="hero image" />
+          <img
+            src="../assets/hero.jpg"
+            alt="hero image"
+            class="d-none d-sm-block"
+          />
           <a href="https://www.freepik.com/photos/woman"
             >Woman photo created by benzoix - www.freepik.com</a
           >
@@ -76,6 +84,14 @@ export default {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 576px) {
+  .satu {
+    background-image: url("../assets/hero sm.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
   .button-hero {
     margin-top: 20px;
     margin-bottom: 20px;

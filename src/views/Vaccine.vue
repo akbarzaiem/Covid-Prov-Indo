@@ -23,10 +23,14 @@
     </div>
     <div class="vaksin" v-if="vaksin.length !== 0">
       <div class="row">
-        <div class="col align-self-center">
+        <div class="col align-self-center col-sm-12 col-12">
           <div class="image">
-            <img src="../assets/vaccine.jpg" alt="vaccine image" />
-            <p class="attribute">
+            <img
+              src="../assets/vaccine.jpg"
+              alt="vaccine image"
+              class="d-none d-sm-block"
+            />
+            <p class="attribute d-none d-sm-block">
               Photo by
               <a
                 href="https://unsplash.com/@schluditsch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -40,7 +44,7 @@
             </p>
           </div>
         </div>
-        <div class="col align-self-center">
+        <div class="dua col align-self-center">
           <h3 class="tittle">Jumlah Penerima Vaksin di Indonesia</h3>
           <p class="tittle-vak">Vaksinasi 1</p>
           <p class="percent">{{ percentVaksin1 }} %</p>
@@ -165,6 +169,16 @@ export default {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) and (max-width: 576px) {
+  .dua {
+    background-image: url("../assets/vaccine sm.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
   }
 }
 </style>
