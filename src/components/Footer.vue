@@ -10,7 +10,7 @@
 
     <!-- Image and text -->
     <carousel
-      class="navbar navbar-light bg-light"
+      class="navbar navbar-white"
       :autoplay="true"
       :nav="false"
       :items="3"
