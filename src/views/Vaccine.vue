@@ -181,6 +181,7 @@ export default {
     background-position: 50%;
     background-size: cover;
     border-radius: 20px;
+    margin: 0 15px 0 15px;
   }
 }
 </style>
