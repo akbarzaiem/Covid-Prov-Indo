@@ -36,7 +36,7 @@
       >
         <div class="image-hero">
           <img
-            src="../assets/hero.jpg"
+            src="../assets/hero.svg"
             alt="hero image"
             class="d-none d-sm-block"
           />
@@ -85,7 +85,7 @@ export default {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 576px) {
   .satu {
-    background-image: url("../assets/hero sm.jpg");
+    background-image: url("../assets/hero sm.svg");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
