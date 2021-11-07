@@ -30,7 +30,7 @@
           "
         >
           <div class="image d-none d-sm-block">
-            <img src="../assets/vaccine.jpg" alt="vaccine image" />
+            <img src="../assets/vaccine.svg" alt="vaccine image" />
             <p class="attribute d-none d-sm-block">
               Photo by
               <a
@@ -175,7 +175,7 @@ export default {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 576px) {
   .dua {
-    background-image: url("../assets/vaccine sm.jpg");
+    background-image: url("../assets/vaccine sm.svg");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
