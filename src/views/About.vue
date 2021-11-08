@@ -27,7 +27,7 @@
   color: black;
 }
 .space {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 </style>
 

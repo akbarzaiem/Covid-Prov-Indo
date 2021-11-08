@@ -119,7 +119,7 @@ export default {
 <style scoped>
 .vaksin {
   margin-top: 25px;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 .image img {
   width: 300px;

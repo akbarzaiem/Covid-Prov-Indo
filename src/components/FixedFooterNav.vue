@@ -18,6 +18,22 @@
         Covid 19 in INDONESIA -->
 
       <div class="row">
+        <div class="col">
+          <router-link to="/indototal" class="routerlink"
+            ><img src="../assets/12.png" alt="icon3" class="icon"
+          /></router-link>
+        </div>
+        <div class="col">
+          <router-link to="/about" class="routerlink"
+            ><img src="../assets/12.png" alt="icon3" class="icon"
+          /></router-link>
+        </div>
+        <div class="col">
+          <router-link to="/vaccine" class="routerlink"
+            ><img src="../assets/3.png" alt="icon3" class="icon"
+          /></router-link>
+        </div>
+        <div class="w-100"></div>
         <div class="col text">
           <router-link to="/indototal" class="routerlink"
             >Data Nasional</router-link
@@ -33,11 +49,6 @@
             >Data Vaksin</router-link
           >
         </div>
-
-        <!-- <div class="w-100"></div>
-          <div class="col">col 4</div>
-          <div class="col">col 5</div>
-          <div class="col">col 6</div> -->
       </div>
     </div>
   </nav>
@@ -51,7 +62,7 @@ export default {
 
 <style scoped>
 .text {
-  font-size: 12px;
+  font-size: 13px;
 }
 .routerlink {
   font-family: "Poppins", sans-serif;
@@ -61,5 +72,13 @@ export default {
 }
 .routerlink:hover {
   color: white;
+}
+.icon {
+  height: 30px;
+  margin-bottom: -15px;
+  margin-top: -18px;
+}
+.icon:hover {
+  opacity: 0.3;
 }
 </style>
