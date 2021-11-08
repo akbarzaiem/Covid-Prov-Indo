@@ -30,19 +30,9 @@
           "
         >
           <div class="image d-none d-sm-block">
-            <img src="../assets/vaccine.svg" alt="vaccine image" />
-            <p class="attribute d-none d-sm-block">
-              Photo by
-              <a
-                href="https://unsplash.com/@schluditsch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                >Daniel Schludi</a
-              >
-              on
-              <a
-                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                >Unsplash</a
-              >
-            </p>
+            <a href="https://www.freepik.com/vectors/illustrations">
+              <img src="../assets/vc.webp" alt="vaccine image" />
+            </a>
           </div>
         </div>
         <div class="dua col align-self-center">
@@ -125,7 +115,8 @@ export default {
   margin-top: 25px;
 }
 .image img {
-  width: 290px;
+  width: 300px;
+  height: 350px;
   border-radius: 20px;
 }
 .tittle {
@@ -175,7 +166,7 @@ export default {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 576px) {
   .dua {
-    background-image: url("../assets/vaccine sm.svg");
+    background-image: url("../assets/vc sm.webp");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;

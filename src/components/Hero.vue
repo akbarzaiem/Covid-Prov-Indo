@@ -35,14 +35,13 @@
         class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center"
       >
         <div class="image-hero">
-          <img
-            src="../assets/hero.svg"
-            alt="hero image"
-            class="d-none d-sm-block"
-          />
-          <a href="https://www.freepik.com/photos/woman"
-            >Woman photo created by benzoix - www.freepik.com</a
-          >
+          <a href="https://www.freepik.com/photos/woman">
+            <img
+              src="../assets/hero.webp"
+              alt="hero image"
+              class="d-none d-sm-block"
+            />
+          </a>
         </div>
       </div>
     </div>
@@ -76,16 +75,10 @@ export default {
   border-radius: 15px;
 }
 
-.image-hero a {
-  color: black;
-  font-size: 8px;
-  float: right;
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 576px) {
   .satu {
-    background-image: url("../assets/hero sm.svg");
+    background-image: url("../assets/hero sm.webp");
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
