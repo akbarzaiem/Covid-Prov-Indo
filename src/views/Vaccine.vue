@@ -15,10 +15,13 @@
       rel="stylesheet"
     />
     <Header />
-    <div id="nav">
-      <router-link to="/indototal">Data Nasional</router-link> |
-      <router-link to="/about">Data Provinsi</router-link> |
-      <router-link to="/vaccine">Data Vaksin</router-link>
+    <div id="nav" class="d-none d-sm-block">
+      <router-link to="/indototal" class="routerlink"
+        >Data Nasional</router-link
+      >
+      |
+      <router-link to="/about" class="routerlink">Data Provinsi</router-link> |
+      <router-link to="/vaccine" class="routerlink">Data Vaksin</router-link>
     </div>
     <div class="vaksin" v-if="vaksin.length !== 0">
       <div class="row">
@@ -63,7 +66,8 @@
         <p style="margin-top: 10px">Loading....</p>
       </div>
     </div>
-    <Footer />
+    <Footer class="d-none d-sm-block" />
+    <FixedFoo />
   </div>
 </template>
 
@@ -71,12 +75,14 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import FixedFoo from "@/components/FixedFooterNav.vue";
 import axios from "axios";
 export default {
   name: "Vaccine",
   components: {
     Header,
     Footer,
+    FixedFoo,
   },
   data() {
     return {
@@ -113,6 +119,7 @@ export default {
 <style scoped>
 .vaksin {
   margin-top: 25px;
+  margin-bottom: 70px;
 }
 .image img {
   width: 300px;
@@ -162,6 +169,13 @@ export default {
   100% {
     transform: rotate(360deg);
   }
+}
+#nav .routerlink {
+  color: #27aace;
+  text-decoration: none;
+}
+#nav .routerlink:hover {
+  color: black;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 300px) and (max-width: 576px) {

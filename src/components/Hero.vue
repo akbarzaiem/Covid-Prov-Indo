@@ -25,7 +25,7 @@
         </div>
         <div class="button-hero">
           <router-link style="text-decoration: none" to="/indototal">
-            <button type="button" class="btn btn-primary btn-lg">
+            <button type="button" class="btn btn-lg">
               <p>Lihat Data</p>
             </button>
           </router-link>
@@ -66,6 +66,11 @@ export default {
   border-radius: 30px;
   margin-top: 20px;
   height: 50px;
+  background-color: #27aace;
+}
+.button-hero button:hover {
+  background-color: #27aacea4;
+  transition: 1s;
 }
 .button-hero p {
   color: white;

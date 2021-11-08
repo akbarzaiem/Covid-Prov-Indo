@@ -15,10 +15,13 @@
       rel="stylesheet"
     />
     <Header />
-    <div id="nav">
-      <router-link to="/indototal">Data Nasional</router-link> |
-      <router-link to="/about">Data Provinsi</router-link> |
-      <router-link to="/vaccine">Data Vaksin</router-link>
+    <div id="nav" class="d-none d-sm-block">
+      <router-link to="/indototal" class="routerlink"
+        >Data Nasional</router-link
+      >
+      |
+      <router-link to="/about" class="routerlink">Data Provinsi</router-link> |
+      <router-link to="/vaccine" class="routerlink">Data Vaksin</router-link>
     </div>
     <div class="hasil">
       <p class="top-tittle">Jumlah Kasus Covid 19 di Indonesia</p>
@@ -59,7 +62,8 @@
       </div>
     </div>
 
-    <Footer />
+    <Footer class="d-none d-sm-block" />
+    <FixedFoo />
   </div>
 </template>
 
@@ -68,9 +72,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import FixedFoo from "@/components/FixedFooterNav.vue";
 export default {
   name: "IndoTotal",
-  components: { Header, Footer },
+  components: { Header, Footer, FixedFoo },
   data() {
     return {
       total: [],
@@ -87,6 +92,7 @@ export default {
 <style scoped>
 .hasil {
   margin-top: 25px;
+  margin-bottom: 70px;
 }
 .data {
   font-size: 50px;
@@ -119,5 +125,12 @@ export default {
   100% {
     transform: rotate(360deg);
   }
+}
+#nav .routerlink {
+  color: #27aace;
+  text-decoration: none;
+}
+#nav .routerlink:hover {
+  color: black;
 }
 </style>
